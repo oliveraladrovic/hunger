@@ -19,50 +19,70 @@
   <body>
     <!-- Header -->
     <header id="header">
-      <nav id="nav-left">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#booking">Booking</a></li>
-        </ul>
-      </nav>
-      <div id="logo">
-        <img
-          src="./images/logo.png"
-          width="150"
-          height="150"
-          alt="Logo of Hungry People Restaurant"
-        />
+      <div class="header wrapper">
+        <nav class="nav-left">
+          <ul>
+            <li><a href="#home" class="active-navlink">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#booking">Booking</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-right">
+          <ul>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img
+            src="./images/logo.png"
+            width="150"
+            height="150"
+            alt="Logo of Hungry People Restaurant"
+          />
+        </div>
       </div>
-      <nav id="nav-right">
-        <ul>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Home section -->
     <section id="home">
-      <div class="home-left">
-        <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
-      </div>
-      <div class="home-center">
-        <p><span class="caption">Restaurant</span></p>
-        <h1>Hungry people</h1>
-        <div class="home-buttons">
-          <a href="#" class="btn-primary">Book table</a>
-          <a href="#" class="btn-ghost">Explore</a>
+      <div class="home wrapper">
+        <div class="home-left">
+          <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
         </div>
-        <a href="#"><i class="fas fa-chevron-circle-down"></i></a>
-      </div>
-      <div class="home-right">
-        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <div class="home-center">
+          <p><span class="caption">Restaurant</span></p>
+          <h1>Hungry people</h1>
+          <div class="home-buttons">
+            <a href="#" class="btn-primary">Book table</a>
+            <a href="#" class="btn-ghost">Explore</a>
+          </div>
+          <div class="social">
+            <a href="#contact" class="round"
+              ><i class="fas fa-chevron-circle-down"></i
+            ></a>
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="social">
+            <a href="www.facebook.com" class="round"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="social">
+            <a href="www.twitter.com" class="round"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="social">
+            <a href="www.instagram.com" class="round"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -172,11 +192,11 @@
       </div>
     </section>
 
-    <!-- Galery section -->
-    <section id="galery">
+    <!-- Galerie section -->
+    <section id="galerie">
       <p><span class="caption">Specialties</span></p>
-      <div class="galery">
-        <div class="galery-left">
+      <div class="galerie">
+        <div class="galerie-left">
           <img
             src="./images/chocolate-pancakes.jpg"
             width="475"
@@ -185,7 +205,7 @@
           />
           <img src="./images/yellow-rect.png" alt="Design effect over image" />
         </div>
-        <div class="galery-right">
+        <div class="galerie-right">
           <h2>Chocolate Pancakes</h2>
           <p>
             <span class="highlight"
