@@ -20,7 +20,15 @@
     <!-- Header -->
     <header id="header">
       <div class="header wrapper">
-        <nav class="nav-left">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo of Hungry People Restaurant" />
+        </div>
+        <a href="javascript:void(0);" class="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <nav class="nav">
           <ul>
             <li><a href="#home" class="active-navlink">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -28,7 +36,7 @@
             <li><a href="#booking">Booking</a></li>
           </ul>
         </nav>
-        <nav class="nav-right">
+        <nav class="nav">
           <ul>
             <li><a href="#galerie">Galerie</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -36,20 +44,12 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="logo">
-          <img
-            src="./images/logo.png"
-            width="150"
-            height="150"
-            alt="Logo of Hungry People Restaurant"
-          />
-        </div>
       </div>
     </header>
 
     <!-- Home section -->
     <section id="home">
-      <div class="home wrapper">
+      <!-- <div class="home wrapper">
         <div class="home-left">
           <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
         </div>
@@ -83,7 +83,7 @@
             ></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- About section -->
@@ -121,15 +121,18 @@
     <!-- Team section -->
     <section id="team">
       <p><span class="caption">Our team</span></p>
-      <div class="team">
+      <div class="team wrapper">
         <div class="team-left">
           <img
             src="./images/team-img.jpg"
-            width="475"
-            height="475"
+            class="section-img"
             alt="Image of chef making delicious food"
           />
-          <img src="./images/yellow-rect.png" alt="Design effect over image" />
+          <img
+            src="./images/yellow-rect.png"
+            class="yellow-rect left"
+            alt="Design effect over image"
+          />
         </div>
         <div class="team-right">
           <h2>Master chef</h2>
