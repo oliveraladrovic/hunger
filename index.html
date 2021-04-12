@@ -152,42 +152,48 @@
 
     <!-- Booking section -->
     <section id="booking">
-      <div class="booking">
-        <div class="booking-left">
-          <h2>Book a table</h2>
-          <form id="booking">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <input type="tel" name="phone" id="phone" placeholder="Phone" />
-            <select name="people" id="people" placeholder="People">
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-              <option value="five">5</option>
-              <option value="six">6</option>
-            </select>
-            <input
-              type="date"
-              name="date"
-              id="date"
-              placeholder="Date(mm/dd)"
+      <div class="wrapper">
+        <div class="booking">
+          <div class="booking-left">
+            <h2>Book a table</h2>
+            <form id="booking-form">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input type="tel" name="phone" id="phone" placeholder="Phone" />
+              <select name="people" id="people" placeholder="People">
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+              </select>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Date(mm/dd)"
+              />
+              <select name="time" id="time" placeholder="Time">
+                <option value="eighteen">18:00</option>
+                <option value="nineteen">19:00</option>
+                <option value="twenty">20:00</option>
+                <option value="twentyone">21:00</option>
+                <option value="twentytwo">22:00</option>
+                <option value="twentythree">23:00</option>
+              </select>
+              <button type="submit" class="booking-submit">Book now</button>
+            </form>
+          </div>
+          <div class="booking-right">
+            <img
+              src="./images/7495_Vintage-clock-HD-beautiful-old-invention.jpg"
+              class="section-img"
+              alt="Image of beautiful vintage clock"
             />
-            <select name="time" id="time" placeholder="Time">
-              <option value="eighteen">18:00</option>
-              <option value="nineteen">19:00</option>
-              <option value="twenty">20:00</option>
-              <option value="twentyone">21:00</option>
-              <option value="twentytwo">22:00</option>
-              <option value="twentythree">23:00</option>
-            </select>
-            <button type="submit" class="btn-primary submit">Book now</button>
-          </form>
+            <div class="yellow-rect"></div>
+          </div>
         </div>
-        <div class="booking-right">
-          <!-- <img src="./images/booking-img.jpg" alt="Image of ancient watch" />
-          <img src="./images/yellow-rect.png" alt="Design effect over image" /> -->
-        </div>
-        <p>
+        <p class="work-hours">
           Mon - Fri: <b> 8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone:
           <b>+40 729 131 637</b>/<b>+40 726 458 782</b>
         </p>

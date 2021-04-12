@@ -439,6 +439,85 @@ h2::after {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/*********
+  Booking
+**********/
+#booking {
+  background: #fff;
+}
+
+#booking .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.booking {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.booking-left {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 40px;
+}
+
+#booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 60px;
+  grid-template-areas:
+    'a b'
+    'c d'
+    'e f'
+    'g g';
+}
+
+.booking-submit {
+  grid-area: g;
+}
+
+#booking-form input,
+#booking-form select {
+  border: none;
+  background: #e5e5e5;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.booking-submit {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  background: var(--prime-yellow);
+  color: #fff;
+  cursor: pointer;
+}
+
+.booking-submit:hover {
+  background: var(--second-yellow);
+  color: #000;
+}
+
+.booking-right {
+  padding: 0 40px;
+  position: relative;
+}
+
+p.work-hours {
+  padding-top: 24px;
+}
+
 /***************
   Media Queries
 ****************/
@@ -491,6 +570,14 @@ h2::after {
     width: 150px;
     height: 150px;
     border: 15px solid var(--prime-yellow);
+  }
+
+  /* Booking */
+  .booking {
+    grid-template-columns: 1fr;
+  }
+  .booking-right {
+    display: none;
   }
 }
 
@@ -583,6 +670,19 @@ h2::after {
     width: 250px;
     height: 250px;
     border: 20px solid var(--second-yellow);
+  }
+
+  /* Booking */
+  .booking-right {
+    display: block;
+    grid-row-start: 1;
+  }
+  .booking {
+    grid-template-columns: 1fr;
+  }
+  .booking-left,
+  .booking-right {
+    padding: 50px 50px 0 50px;
   }
 }
 
@@ -688,5 +788,30 @@ h2::after {
 
   .yellow-rect {
     display: none;
+  }
+
+  /* Booking */
+  #booking-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-auto-rows: 40px;
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd'
+      'e'
+      'f'
+      'g';
+  }
+  .booking-left,
+  .booking-right {
+    padding: 25px 1rem;
+  }
+
+  .work-hours {
+    padding: 0 1rem;
+    text-align: center;
   }
 }
