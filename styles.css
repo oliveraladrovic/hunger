@@ -286,6 +286,73 @@ h1::after {
   color: var(--second-yellow);
 }
 
+/*******
+  About
+********/
+.about {
+  background: #fff;
+  min-height: 100vh;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.about-left {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 40px;
+}
+
+h2 {
+  font-family: Banny;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0 1.5rem 0;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+h2::after {
+  content: url('./images/decoration.png');
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.about-right {
+  padding: 0 40px;
+  position: relative;
+}
+
+.section-img {
+  width: 85%;
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+}
+
+.yellow-rect {
+  width: 250px;
+  height: 250px;
+  border: 20px solid var(--prime-yellow);
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /***************
   Media Queries
 ****************/
@@ -306,6 +373,7 @@ h1::after {
   .nav li {
     width: 68px;
   }
+
   /* Home */
   #home {
     grid-template-columns: 1fr 648px 1fr;
@@ -314,6 +382,22 @@ h1::after {
     font-size: 4rem;
     padding: 4rem 0 3rem 0;
     margin-bottom: 1.2rem;
+  }
+
+  /* About */
+  .section-img {
+    width: 100%;
+  }
+  .yellow-rect {
+    width: 150px;
+    height: 150px;
+    border: 15px solid var(--prime-yellow);
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -331,6 +415,7 @@ h1::after {
   .nav a {
     font-weight: 400;
   }
+
   /* Home */
   #home {
     grid-template-columns: 1fr 496px 1fr;
@@ -359,6 +444,26 @@ h1::after {
   }
   .fab {
     font-size: 1rem;
+  }
+
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 50px;
+  }
+
+  .section-img {
+    width: 85%;
+  }
+
+  .yellow-rect {
+    width: 250px;
+    height: 250px;
+    border: 20px solid var(--second-yellow);
   }
 }
 
@@ -406,5 +511,32 @@ h1::after {
   }
   .home-buttons {
     flex-direction: column;
+  }
+
+  /* About */
+  .about-left,
+  .about-right {
+    padding: 25px 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-left {
+    line-height: normal;
+  }
+
+  .highlight {
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  .section-img {
+    width: 100%;
+  }
+
+  .yellow-rect {
+    display: none;
   }
 }
