@@ -637,10 +637,6 @@ p.work-hours {
   height: 30px;
 }
 
-.slide.active-slide {
-  opacity: 1;
-}
-
 .slider-navigation .slider-btn {
   background: #fff;
   opacity: 0.2;
