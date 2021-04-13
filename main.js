@@ -51,3 +51,33 @@ links.forEach((link) => {
     });
   });
 });
+
+// Specialties slider
+const slides = document.querySelectorAll('.slide');
+const btns = document.querySelectorAll('.slider-btn');
+let currentSlide = 0;
+let margin = 0;
+// Manual navigation
+const showSlide = (currentSlide) => {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.left = `${i * 100 - currentSlide * 100}vw`;
+  }
+  btns.forEach((btn) => {
+    btn.classList.remove('active-slider-btn');
+  });
+  btns[currentSlide].classList.add('active-slider-btn');
+};
+btns.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    showSlide(i);
+    currentSlide = i;
+  });
+});
+// Autoplay
+setInterval(() => {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
+}, 10000);

@@ -121,7 +121,8 @@ a {
   Home
 *******/
 #home {
-  background: url('./images/home-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./images/home-bg.jpg') no-repeat center center/cover;
   min-height: 100vh;
   padding-top: 100px;
   display: grid;
@@ -518,6 +519,147 @@ p.work-hours {
   padding-top: 24px;
 }
 
+/*************
+  Specialties
+**************/
+#specialties {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./images/specialties-bg.jpg') no-repeat center center/cover;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.specialties-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 850px 1fr;
+}
+
+.specialties-linediv2 {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100vh;
+  position: relative;
+}
+
+.specialties-centralline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specialties {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.specialties-left {
+  padding: 0 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.specialties .section-img {
+  width: 85%;
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+}
+
+.specialties .yellow-rect {
+  width: 250px;
+  height: 250px;
+  border: 20px solid var(--prime-yellow);
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.specialties-right {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.specialties-right h2 {
+  color: #fff;
+}
+
+.specialties-right p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30rem;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: left 1s ease-in-out;
+}
+
+.slide:first-child {
+  left: 0;
+}
+.slide:nth-child(2) {
+  left: 100vw;
+}
+.slide:nth-child(3) {
+  left: 200vw;
+}
+
+.slider-navigation {
+  display: flex;
+  height: 30px;
+}
+
+.slide.active-slide {
+  opacity: 1;
+}
+
+.slider-navigation .slider-btn {
+  background: #fff;
+  opacity: 0.2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slider-navigation .slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-navigation .slider-btn.active-slider-btn {
+  opacity: 1;
+}
+
 /***************
   Media Queries
 ****************/
@@ -578,6 +720,19 @@ p.work-hours {
   }
   .booking-right {
     display: none;
+  }
+
+  /* Specialties */
+  .specialties-lines {
+    grid-template-columns: 1fr 648px 1fr;
+  }
+  .specialties .section-img {
+    width: 100%;
+  }
+  .specialties .yellow-rect {
+    width: 150px;
+    height: 150px;
+    border: 15px solid var(--prime-yellow);
   }
 }
 
@@ -683,6 +838,36 @@ p.work-hours {
   .booking-left,
   .booking-right {
     padding: 50px 50px 0 50px;
+  }
+
+  /* Specialties */
+  #specialties {
+    padding-top: 150px;
+  }
+  .specialties-lines {
+    grid-template-columns: 1fr 496px 1fr;
+  }
+  .specialties {
+    grid-template-columns: 1fr;
+  }
+
+  .specialties-left,
+  .specialties-right {
+    padding: 50px;
+  }
+
+  .specialties .section-img {
+    width: 85%;
+  }
+
+  .specialties .yellow-rect {
+    width: 250px;
+    height: 250px;
+    border: 20px solid var(--second-yellow);
+  }
+
+  .slider {
+    height: 60rem;
   }
 }
 
@@ -813,5 +998,40 @@ p.work-hours {
   .work-hours {
     padding: 0 1rem;
     text-align: center;
+  }
+
+  /* Specialties */
+  .specialties-lines {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+
+  .specialties-left,
+  .specialties-right {
+    padding: 25px 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .specialties-right {
+    line-height: normal;
+  }
+
+  .highlight {
+    font-size: 1rem;
+    line-height: normal;
+  }
+
+  .specialties .section-img {
+    width: 100%;
+  }
+
+  .yellow-rect {
+    display: none;
+  }
+
+  .slider {
+    height: 53rem;
   }
 }
