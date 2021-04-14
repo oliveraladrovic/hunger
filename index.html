@@ -292,23 +292,437 @@
 
     <!-- Menu section -->
     <section id="menu">
-      <h2>Delicious menu</h2>
-      <p>
-        <span class="highlight"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-          velit maximus, molestie est a, tempor magna.</span
-        >
-      </p>
-      <div class="filters">
-        <ul>
-          <li><button class="filter">Soupe</button></li>
-          <li><button class="filter">Pizza</button></li>
-          <li><button class="filter">Pasta</button></li>
-          <li><button class="filter">Desert</button></li>
-          <li><button class="filter">Wine</button></li>
-          <li><button class="filter">Beer</button></li>
-          <li><button class="filter">Drinks</button></li>
-        </ul>
+      <div class="menu wrapper">
+        <h2>Delicious menu</h2>
+        <p>
+          <span class="highlight"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            <span class="line-break"><br /></span> velit maximus, molestie est
+            a, tempor magna.</span
+          >
+        </p>
+        <div class="filters">
+          <ul>
+            <li>
+              <button
+                class="filter soup active-filter"
+                onclick="filterSelection('soup')"
+              >
+                Soupe
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter pizza" onclick="filterSelection('pizza')">
+                Pizza
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter pasta" onclick="filterSelection('pasta')">
+                Pasta
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter desert" onclick="filterSelection('desert')">
+                Desert
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter wine" onclick="filterSelection('wine')">
+                Wine
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter beer" onclick="filterSelection('beer')">
+                Beer
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="filter drink" onclick="filterSelection('drink')">
+                Drinks
+                <span class="hidden"><i class="fas fa-chevron-down"></i></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-items">
+          <!-- Soups -->
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Soup Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Soup only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Soup ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Soup very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Soup super soup.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item soup">
+            <div class="item-name">
+              <div class="name">Lorem soup</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Pizzas -->
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Pizza Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Pizza only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Pizza ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Pizza very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Pizza super pizza.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item pizza">
+            <div class="item-name">
+              <div class="name">Lorem pizza</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Pastas -->
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Pasta Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Pasta only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Pasta ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Pasta very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Pasta super pasta.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item pasta">
+            <div class="item-name">
+              <div class="name">Lorem pasta</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Deserts -->
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Desert Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Desert only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Desert ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Desert very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Desert super desert.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item desert">
+            <div class="item-name">
+              <div class="name">Lorem desert</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Wines -->
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Wine Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Wine only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Wine ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Wine very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Wine super wine.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item wine">
+            <div class="item-name">
+              <div class="name">Lorem wine</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Beers -->
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Beer Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Beer only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Beer ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Beer very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Beer of the bears.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item beer">
+            <div class="item-name">
+              <div class="name">Lorem bear</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+          <!-- Drinks -->
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Drink Lorem, ipsum.</div>
+              <div class="price">9.99 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+          </div>
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Drink only lorem</div>
+              <div class="price">10.49 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Drink ipsum lorem</div>
+              <div class="price">6.89 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+          </div>
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Drink very lorem</div>
+              <div class="price">11.39 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos.
+            </div>
+          </div>
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Drink super drink.</div>
+              <div class="price">8.69 USD</div>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="item drink">
+            <div class="item-name">
+              <div class="name">Lorem drink</div>
+              <div class="price">6.56 USD</div>
+            </div>
+            <div class="description">Lorem ipsum dolor sit.</div>
+          </div>
+        </div>
       </div>
     </section>
 

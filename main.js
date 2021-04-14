@@ -81,3 +81,53 @@ setInterval(() => {
   }
   showSlide(currentSlide);
 }, 10000);
+
+// Menu filtering
+const filterButtons = document.querySelectorAll('.filter');
+const items = document.querySelectorAll('.item');
+function filterSelection(filter) {
+  // Change active button
+  filterButtons.forEach((btn) => {
+    if (btn.classList.contains('active-filter')) {
+      btn.classList.remove('active-filter');
+    }
+    if (btn.classList.contains(filter)) {
+      btn.classList.add('active-filter');
+    }
+  });
+  // Filter items
+  items.forEach((item) => {
+    if (item.classList.contains('hidden')) {
+      item.classList.remove('hidden');
+    }
+    if (!item.classList.contains(filter)) {
+      item.classList.add('hidden');
+    }
+  });
+  // Small screen menu
+  if (
+    filterButtons[0].offsetWidth > 150 ||
+    filterButtons[0].offsetWidth === 0
+  ) {
+    filterButtons.forEach((btn) => {
+      btn.classList.toggle('hidden');
+      btn.children[0].classList.toggle('hidden');
+      if (btn.classList.contains('active-filter')) {
+        btn.classList.toggle('hidden');
+      }
+    });
+  }
+}
+// const checkButtons = () => {
+//   console.log('check');
+//   if (filterButtons[0].offsetWidth > 150) {
+//     filterButtons.forEach((btn) => {
+//       if (!btn.classList.contains('active-filter')) {
+//         btn.classList.add('hidden');
+//         console.log(btn.children[0].classList);
+//         btn.children[0].classList.add('hidden');
+//       }
+//     });
+//   }
+// };
+filterSelection('soup');
