@@ -789,9 +789,6 @@ p.work-hours {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.events .yellow-rect {
-  z-index: 1;
-}
 
 .events-left {
   padding: 0 40px;
@@ -799,7 +796,6 @@ p.work-hours {
   position: relative;
   flex-direction: column;
   align-items: flex-end;
-  border: 1px solid red;
 }
 
 .events-right {
@@ -808,12 +804,25 @@ p.work-hours {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid red;
+}
+
+.events-right .yellow-rect {
+  z-index: 1;
+}
+
+.events-left .yellow-rect {
+  left: 0;
+  z-index: 1;
+}
+
+.events-left .section-img,
+.events-right .section-img {
+  width: 100%;
 }
 
 .h3-box {
   position: relative;
-  border: 1px solid white;
+  width: 85%;
 }
 
 h3 {
@@ -824,7 +833,7 @@ h3 {
   color: #fff;
   text-transform: uppercase;
   height: 80px;
-  width: 86%;
+  width: 101%;
   background: #000;
   position: absolute;
   bottom: 0;
@@ -840,10 +849,6 @@ h3 {
   transform-origin: 100% 100%;
   transform: rotate(90deg);
   right: 79px;
-}
-
-.events-left .yellow-rect {
-  left: 0;
 }
 
 .bigger {
@@ -1066,11 +1071,8 @@ footer p {
   }
 
   /* Events */
-  .events-lines {
-    grid-template-columns: 1fr 648px 1fr;
-  }
-  .events .yellow-rect {
-    display: none;
+  .h3-box {
+    width: 100%;
   }
   h3 {
     width: 102%;
@@ -1233,14 +1235,6 @@ footer p {
   }
 
   /* Events */
-  #events {
-    padding-top: 150px;
-  }
-
-  .events-lines {
-    grid-template-columns: 1fr 496px 1fr;
-  }
-
   .events {
     grid-template-columns: 1fr;
   }
@@ -1250,8 +1244,11 @@ footer p {
     padding: 50px;
   }
 
+  .h3-box {
+    width: 85%;
+  }
   h3 {
-    width: 86%;
+    width: 101%;
   }
 
   /* Interior photos */
@@ -1456,26 +1453,29 @@ footer p {
     width: 100%;
   }
   /* Events */
-  .events-lines {
-    grid-template-columns: 1fr 5fr 1fr;
-  }
-
   .events-left,
   .events-right {
     padding: 25px 1rem;
   }
-  h3 {
-    width: 102%;
-    height: 60px;
-    line-height: 60px;
-    font-size: 1rem;
+
+  .h3-box {
+    width: 100%;
   }
+
+  h3 {
+    line-height: normal;
+    font-size: 1rem;
+    width: 102%;
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+
   .h3-right {
-    left: 59px;
+    left: 32px;
   }
 
   .h3-left {
-    right: 59px;
+    right: 32px;
   }
 
   /* Contact */
