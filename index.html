@@ -790,54 +790,66 @@
 
     <!-- Contact section -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <span class="highlight"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-          velit maximus, molestie est a, tempor magna.</span
-        >
-      </p>
-      <form id="contact">
-        <input
-          type="text"
-          name="contact-name"
-          id="contact-name"
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          name="contact-email"
-          id="contact-email"
-          placeholder="Email"
-        />
-        <input
-          type="tel"
-          name="contact-phone"
-          id="contact-phone"
-          placeholder="Phone"
-        />
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="message"
-        ></textarea>
+      <div class="contact wrapper">
+        <h2>Contact</h2>
         <p>
-          <i class="fas fa-map-marker-alt"></i> 5th London Boulevard, U.K.
-          <a href="tel:0040729131637"
-            ><i class="fas fa-phone"></i> +40 729 131 637/+40 726 458 782</a
+          <span class="highlight"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            <span class="line-break"><br /></span> at velit maximus, molestie
+            est a, tempor magna.</span
           >
-          <a href="mailto:office@mindblister.com"
-            ><i class="fas fa-envelope"></i> office@mindblister.com</a
-          >
-          <button type="submit" class="btn-primary submit">Send message</button>
         </p>
-      </form>
-      <div class="map"></div>
+        <form id="contact-form">
+          <div class="contact-grid">
+            <input
+              type="text"
+              name="contact-name"
+              id="contact-name"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              name="contact-email"
+              id="contact-email"
+              placeholder="Email"
+            />
+            <input
+              type="tel"
+              name="contact-phone"
+              id="contact-phone"
+              placeholder="Phone"
+            />
+            <textarea
+              name="message"
+              id="contact-message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="contacts-and-btn">
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 5th London Boulevard, U.K.
+              </li>
+              <li>
+                <a href="tel:0040729131637"
+                  ><i class="fas fa-phone"></i> +40 729 131 637/+40 726 458
+                  782</a
+                >
+              </li>
+              <li>
+                <a href="mailto:office@mindblister.com"
+                  ><i class="fas fa-envelope"></i> office@mindblister.com</a
+                >
+              </li>
+            </ul>
+            <button type="submit" class="contact-submit">Send message</button>
+          </div>
+        </form>
+        <div class="map"></div>
+      </div>
     </section>
     <footer>
-      <p>&copy Copyright Mindblister 2021</p>
+      <p>&copy Copyright <span class="bigger">Mindblister</span> 2021</p>
     </footer>
   </body>
 </html>
