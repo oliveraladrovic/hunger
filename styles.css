@@ -872,9 +872,6 @@ h3 {
   text-align: center;
 }
 
-.contact {
-}
-
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -951,6 +948,12 @@ h3 {
 #contact-form li a {
   text-decoration: none;
   color: #333;
+}
+
+/* Map */
+.map {
+  width: 100%;
+  height: 475px;
 }
 
 /********

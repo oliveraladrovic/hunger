@@ -123,3 +123,21 @@ const smallScreenFilters = () => {
   }
 };
 filterSelection('soup');
+
+// Google Maps
+function myMap() {
+  // Sets coordinates, zoom level (0-20) and displays map in div with #map
+  const coords = new google.maps.LatLng(51.5133109, -0.2127897);
+  const mapDiv = document.querySelector('.map');
+  const mapProperties = {
+    center: coords,
+    zoom: 12,
+    // Set cantrols to SMALL
+    zoomControl: true,
+  };
+  // Displays map in div with #map
+  const map = new google.maps.Map(mapDiv, mapProperties);
+  // Animated marker
+  const marker = new google.maps.Marker({ position: coords });
+  marker.setMap(map);
+}
