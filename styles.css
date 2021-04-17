@@ -789,7 +789,9 @@ p.work-hours {
   margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+}
+.events .yellow-rect {
+  z-index: 1;
 }
 
 .events-left {
@@ -847,6 +849,17 @@ h3 {
 
 .bigger {
   font-weight: 700;
+}
+
+/* Interior photos */
+.interior-photos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.interior-photos img {
+  width: 25%;
 }
 
 /***************
@@ -1112,6 +1125,16 @@ h3 {
 
   h3 {
     width: 86%;
+  }
+
+  /* Interior photos */
+  .interior-photos {
+    width: auto;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+  .interior-photos img {
+    width: 250px;
   }
 }
 
