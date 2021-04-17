@@ -104,7 +104,11 @@ function filterSelection(filter) {
       item.classList.add('hidden');
     }
   });
-  // Small screen menu
+  // Check if it's small screen device
+  smallScreenFilters();
+}
+// Small screen menu
+const smallScreenFilters = () => {
   if (
     filterButtons[0].offsetWidth > 150 ||
     filterButtons[0].offsetWidth === 0
@@ -117,17 +121,5 @@ function filterSelection(filter) {
       }
     });
   }
-}
-// const checkButtons = () => {
-//   console.log('check');
-//   if (filterButtons[0].offsetWidth > 150) {
-//     filterButtons.forEach((btn) => {
-//       if (!btn.classList.contains('active-filter')) {
-//         btn.classList.add('hidden');
-//         console.log(btn.children[0].classList);
-//         btn.children[0].classList.add('hidden');
-//       }
-//     });
-//   }
-// };
+};
 filterSelection('soup');

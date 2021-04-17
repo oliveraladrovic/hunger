@@ -61,7 +61,7 @@
         <h1>Hungry people</h1>
         <div class="home-buttons">
           <a href="#booking" class="btn primary">Book table</a>
-          <a href="#galerie" class="btn ghost">Explore</a>
+          <a href="#specialties" class="btn ghost">Explore</a>
         </div>
         <div class="home-scroll">
           <div class="top"></div>
@@ -160,7 +160,9 @@
               <input type="text" name="name" id="name" placeholder="Name" />
               <input type="email" name="email" id="email" placeholder="Email" />
               <input type="tel" name="phone" id="phone" placeholder="Phone" />
-              <select name="people" id="people" placeholder="People">
+              <select name="people" id="people">
+                3
+                <option value="" disabled selected hidden>People</option>
                 <option value="two">2</option>
                 <option value="three">3</option>
                 <option value="four">4</option>
@@ -173,7 +175,8 @@
                 id="date"
                 placeholder="Date(mm/dd)"
               />
-              <select name="time" id="time" placeholder="Time">
+              <select name="time" id="time">
+                <option value="" disabled selected hidden>Time</option>
                 <option value="eighteen">18:00</option>
                 <option value="nineteen">19:00</option>
                 <option value="twenty">20:00</option>
@@ -728,27 +731,48 @@
 
     <!-- Events section -->
     <section id="events">
+      <div class="events-lines">
+        <div class="events-linediv1"></div>
+        <div class="events-linediv2">
+          <div class="events-centralline"></div>
+        </div>
+        <div class="events-linediv3"></div>
+      </div>
       <p><span class="caption">Private events</span></p>
-      <div class="events">
+      <div class="events wrapper">
         <div class="events-left">
-          <!-- <img src="./images/weddings-img.jpg" alt="Image of wedding rings" />
-          <img src="./images/yellow-rect.png" alt="Design effect over image" /> -->
+          <div class="yellow-rect"></div>
+          <div class="h3-box">
+            <img
+              src="./images/wedding-rings-PKSEZUT.jpg"
+              class="section-img"
+              alt="Image of wedding rings"
+            />
+
+            <h3 class="h3-left">Weddings</h3>
+          </div>
         </div>
         <div class="events-right">
-          <!-- <img
-            src="./images/corporate-parties-img.jpg"
-            alt="Image of people in suites holding champagne in glasses"
-          />
-          <img src="./images/yellow-rect.png" alt="Design effect over image" /> -->
+          <div class="yellow-rect"></div>
+          <div class="h3-box">
+            <img
+              src="./images/people-cling-wine-glasses-on-wedding-reception-PP2NYNT.jpg"
+              class="section-img"
+              alt="Image of people in suites holding champagne in glasses"
+            />
+
+            <h3 class="h3-right">Corporate parties</h3>
+          </div>
         </div>
-        <p>
-          For private events please call:
-          <span class="bigger">+40 729 131 637/+40 726 458 782</span> or use the
-          contact form.
-        </p>
       </div>
-      <div class="interior-photos">
-        <!-- <img
+      <p>
+        For private events please call:
+        <span class="bigger">+40 729 131 637/+40 726 458 782</span> or use the
+        contact form.
+      </p>
+    </section>
+    <div class="interior-photos">
+      <!-- <img
           src="./images/interior1.jpg"
           width="360"
           height="360"
@@ -772,8 +796,7 @@
           height="360"
           alt="Image of restaurant interior"
         /> -->
-      </div>
-    </section>
+    </div>
 
     <!-- Contact section -->
     <section id="contact">
