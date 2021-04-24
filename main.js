@@ -115,7 +115,6 @@ const smallScreenFilters = () => {
   ) {
     filterButtons.forEach((btn) => {
       btn.classList.toggle('hidden');
-      btn.children[0].classList.toggle('hidden');
       if (btn.classList.contains('active-filter')) {
         btn.classList.toggle('hidden');
       }
